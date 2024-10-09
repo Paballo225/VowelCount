@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.vowelcounter;
+import java.util.Scanner;
 
 /**
  *
@@ -11,6 +12,14 @@ package com.mycompany.vowelcounter;
 public class VowelCounter {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter a sentence:");
+        String sentence = sc.nextLine();
+        
+        int vowelCount = countVowels(sentence);
+        System.out.println("Number of vowels:" + vowelCount);
+        
+        sc.close();
     }
 }
