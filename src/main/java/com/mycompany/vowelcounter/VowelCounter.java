@@ -22,4 +22,19 @@ public class VowelCounter {
         
         sc.close();
     }
+    
+    public static int countVowels(String sentence){
+        int count = 0;
+        sentence = sentence.toLowerCase();
+        
+        for(int i = 0; i<sentence.length();i++){
+            char ch= sentence.charAt(i);
+            
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                count++;
+            }
+        }
+    return count;
+    }
 }
+
